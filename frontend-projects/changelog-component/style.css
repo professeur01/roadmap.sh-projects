@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 48%;
-    height: 83vh;
+    height: 90vh;
     background-color: hsl(0, 0%, 95%);
     padding: 2rem 1.5rem;
     border-radius: 1rem;
@@ -33,6 +33,7 @@ body {
 .changelog_box {
     background-color: hsl(0, 0%, 5%);
     border-radius: 15px;
+    color: hsl(0, 0%, 95%);
 }
 
 .changelog_container h1,
@@ -75,11 +76,12 @@ p {
 }
 
 .changelog_container .box_date {
-    background-color: red;
+    background-color: transparent;
     width: 40.5%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 28px 0px;
 }
 
 .changelog_container .line {
@@ -88,26 +90,52 @@ p {
 }
 
 .changelog_container .box_sentence {
-    background-color: blue;
+    background-color: transparent;
     width: 59%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 28px 0px;
 }
-.changelog_container .box_date .span_date{
+
+.changelog_container .box_date .span_date {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 3rem;
 }
-.changelog_container .box_sentence .span_sentence{
+
+.changelog_container .box_sentence .span_sentence {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 3rem;
 }
+
+.line .box_boule {
+    position: absolute;
+    top: 2%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 50;
+}
+
+.line .boule {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 50%;
+}
+
 /* ---------------@MEDIA----------------- */
 @media (max-width: 1440px) {}
 
