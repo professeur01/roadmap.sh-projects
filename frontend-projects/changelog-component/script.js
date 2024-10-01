@@ -1,6 +1,10 @@
+const body_parent = document.querySelector(".body_parent");
 const box_date = document.querySelector(".box_date");
 const box_boule = document.querySelector(".box_boule").children;
 const box_sentence = document.querySelector(".box_sentence");
+const feedback = document.getElementById("feedback");
+const btn_feedback = document.getElementById("btn_feedback");
+console.log(body_parent);
 
 // The Event
 box_date.addEventListener("mouseover", hoverDate);
@@ -81,3 +85,24 @@ function hoverSentenceOut(e) {
     box_boule[6].style.backgroundColor = "";
   }
 }
+
+// Display feedback box
+btn_feedback;
+feedback;
+function displayFeedbackPoppup() {
+  btn_feedback.addEventListener("click", (e) => {
+    console.log(e);
+
+    if (e.type === "click") {
+      body_parent.style.display = "flex";
+      feedback.classList.add("feedDisplay");
+    }
+    // feedback.classList.remove("feedDisplay");
+  });
+}
+displayFeedbackPoppup();
+// Display feedback box
+body_parent.addEventListener("click", () => {
+  body_parent.style.display = "none";
+  feedback.classList.remove("feedDisplay");
+});
