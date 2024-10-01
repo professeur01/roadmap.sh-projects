@@ -107,7 +107,6 @@ p {
     height: 3rem;
 }
 
-
 .changelog_container .box_sentence .span_sentence {
     display: flex;
     justify-content: center;
@@ -156,7 +155,7 @@ p {
     height: 27px;
     background-color: hsl(0, 0%, 95%);
     border-radius: 50%;
-    transition: all ease-in 0.2s;
+    transition: all ease-out 0.3s;
     animation: bouleTurn 5s infinite linear;
 }
 
